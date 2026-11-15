@@ -109,7 +109,7 @@ let SYS='';
 const setSys=t=>{SYS=t;const e=$('#sy');if(e)e.textContent=t};
 function impLocal(k){const o=g('skv_d_'+k,null);if(!o||!o.j)return toast('ডাটা নেই');const n=mergeD(o);sv();toast(bn(n)+'টি কাজ আনা হয়েছে');render()}
 // Google লগইন সেটআপ: Google Cloud Console → Credentials → Create OAuth client ID (Web application) → Authorized JavaScript origins-এ সাইটের ঠিকানা দিন → Client ID নিচে GCID-এ বসান। খালি থাকলে প্রথম Google লগইনে চাইবে ও ব্রাউজারে মনে রাখবে।
-let GT=null,GE=0,GTM,GP=0,GPA=0,GPL=0;const GCID='51080580837-ib2vddkhlkdk3t5krmjepa0vatuufu6c.apps.googleusercontent.com',GSC='https://www.googleapis.com/auth/drive.appdata https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';
+let GT=null,GE=0,GTM,GP=0,GPA=0,GPL=0;const GCID='1016173448306-qgfirsscvmaqkt2h1glggr43dthespc3.apps.googleusercontent.com',GSC='https://www.googleapis.com/auth/drive.appdata https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';
 const CIDOK=id=>/^\d{6,}-[A-Za-z0-9_-]+\.apps\.googleusercontent\.com$/.test(id||'');
 const gid=()=>{const v=GCID||L.getItem('skv_gcid')||'';return CIDOK(v)?v:''};
 const gOrigin=()=>location.protocol=='file:'?'(ফাইল হিসেবে খোলা — origin নেই)':location.origin;
